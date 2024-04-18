@@ -1,4 +1,4 @@
-# Функция для добавления вершин
+# Функция для добавления вершин в граф
 def add_edge(gr, u, v):
     if u not in gr:
         graph[u] = []
@@ -7,7 +7,7 @@ def add_edge(gr, u, v):
     gr[u].append(v)
     gr[v].append(u)
 
-# Обход в глубину
+# Функция для обхода графа в глубину
 def dfs(gr, current, destination, visited=None, depth=0):
     if visited is None:
         visited = set()
