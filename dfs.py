@@ -7,7 +7,7 @@ def add_edge(gr, u, v):
     gr[u].append(v)
     gr[v].append(u)
 
-# Обход в глубину
+# Функция для обхода графа в глубину
 def dfs(gr, current, destination, visited=None, depth=0):
     if visited is None:
         visited = set()
