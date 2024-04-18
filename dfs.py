@@ -1,4 +1,4 @@
-# Функция для добавления вершин в граф
+# Function for adding vertices
 def add_edge(gr, u, v):
     if u not in gr:
         graph[u] = []
